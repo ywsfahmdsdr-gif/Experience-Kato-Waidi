@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ka Waidi Nubian House | كاتو وايدي - غرب سهيل، أسوان (Where Peace Is)</title>
+  <meta name="description" content="بيت الضيافة النوبي كاتو وايدي (Ka Waidi Nubian House) في قرية غرب سهيل بأسوان - Where Peace Is. قباب نوبية ملكية، إطلالة نيلية مباشرة على الغروب، وسهرات تراثية أصيلة.">
+  
+  <style>
+    /* ==========================================================================
+       1. Design System & Theming (Glassmorphism & Authentic Nubian Palette)
+       ========================================================================== */
+    :root {
+      /* Palette */
+      --nubian-gold: #f59e0b;
+      --nubian-gold-bright: #fbbf24;
+      --nubian-gold-glow: rgba(245, 158, 11, 0.4);
+      --nubian-blue-royal: #0284c7;
+      --nubian-blue-sky: #38bdf8;
+      --nubian-blue-deep: #0369a1;
+      --nubian-red: #e11d48;
+      --nubian-terracotta: #ea580c;
+      --nubian-green: #10b981;
+      --nubian-green-deep: #047857;
+
+      /* Royal Dark Mode (Default) */
+      --bg-base: #060e18;
+      --bg-surface: #0a1728;
+      --bg-card: rgba(13, 27, 46, 0.78);
+      --bg-card-hover: rgba(18, 36, 62, 0.92);
+      --bg-glass: rgba(10, 23, 40, 0.88);
+      --border-card: rgba(56, 189, 248, 0.18);
+      --border-accent: rgba(245, 158, 11, 0.35);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --card-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.75);
+      --neon-glow: 0 0 25px rgba(2, 132, 199, 0.35);
+      --banner-bg: linear-gradient(90deg, #b45309, #d97706, #b45309);
+      --banner-text: #ffffff;
+    }
+
+    [data-theme="light"] {
+      /* Sunny Nile Light Mode */
+      --bg-base: #faf7f2;
+      --bg-surface: #f3ece0;
+      --bg-card: rgba(255, 255, 255, 0.94);
+      --bg-card-hover: #ffffff;
+      --bg-glass: rgba(250, 247, 242, 0.94);
+      --border-card: rgba(2, 132, 199, 0.2);
+      --border-accent: rgba(234, 88, 12, 0.35);
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+      --card-shadow: 0 12px 32px -8px rgba(180, 83, 9, 0.16);
+      --neon-glow: 0 0 20px rgba(245, 158, 11, 0.25);
+      --banner-bg: linear-gradient(90deg, #9a3412, #c2410c, #9a3412);
+      --banner-text: #ffffff;
+    }
+
+    /* Reset & Typography */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.35s ease, border-color 0.35s ease, color 0.25s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    [lang="ar"] body {
+      font-family: 'Cairo', system-ui, -apple-system, Tahoma, sans-serif;
+    }
+
+    [lang="en"] body {
+      font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ==========================================================================
+       2. Demo Lock Fixed Top Banner
+       ========================================================================== */
+    .demo-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10000;
+      background: var(--banner-bg);
+      color: var(--banner-text);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      padding: 0.65rem 1rem;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      text-align: center;
+    }
+
+    .demo-banner-content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+    }
+
+    .demo-banner-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.32rem 0.85rem;
+      background: #ffffff;
+      color: #9a3412;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.82rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .demo-banner-btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    }
+
+    /* ==========================================================================
+       3. Modern Navbar & Official SVG Arched Logo
+       ========================================================================== */
+    .navbar-spacer {
+      height: 48px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 48px;
+      z-index: 999;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-card);
+      padding: 0.7rem 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Official Detailed SVG Logo */
+    .official-logo-svg {
+      width: 62px;
+      height: 62px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 3px 10px var(--nubian-gold-glow));
+    }
+
+    .brand-text h1 {
+      font-size: 1.25rem;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: 0.5px;
+      background: linear-gradient(135deg, var(--nubian-gold-bright), var(--nubian-terracotta));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-text .sub-slogan {
+      font-size: 0.72rem;
+      letter-spacing: 1.8px;
+      color: var(--nubian-blue-sky);
+      font-weight: 700;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      position: relative;
+      padding: 0.35rem 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--nubian-gold), var(--nubian-blue-royal));
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .icon-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      color: var(--text-main);
+      border-radius: 9999px;
+      padding: 0.5rem 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--nubian-gold);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--nubian-gold-glow);
+    }
+
+    .btn-wa-header {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      border: none;
+      border-radius: 9999px;
+      padding: 0.55rem 1.1rem;
+      font-weight: 800;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-wa-header:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5);
+    }
+
+    /* ==========================================================================
+       4. Hero Section
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      padding: 3.5rem 0 5rem 0;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.18) 0%, transparent 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--border-accent);
+      color: var(--nubian-gold-bright);
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.15);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title .highlight {
+      background: linear-gradient(135deg, var(--nubian-gold-bright) 0%, var(--nubian-terracotta) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-slogan {
+      font-size: 1.35rem;
+      color: var(--nubian-blue-sky);
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--nubian-gold), var(--nubian-terracotta));
+      color: #ffffff;
+      border: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: 14px;
+      font-weight: 800;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 8px 24px var(--nubian-gold-glow);
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(245, 158, 11, 0.55);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-card);
+      padding: 0.85rem 1.8rem;
+      border-radius: 14px;
+      font-weight: 800;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--nubian-blue-sky);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.25);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      border-top: 1px solid var(--border-card);
+      padding-top: 1.5rem;
+      max-width: 540px;
+    }
+
+    .stat-box h4 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--nubian-gold);
+    }
+
+    .stat-box p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Hero Real Image Showcase Frame */
+    .hero-img-showcase {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 2px solid var(--border-accent);
+      box-shadow: var(--card-shadow), var(--neon-glow);
+      height: 440px;
+      background: var(--bg-surface);
+    }
+
+    .hero-img-showcase img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-img-showcase:hover img {
+      transform: scale(1.04);
+    }
+
+    .hero-img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, transparent 0%, rgba(6, 14, 24, 0.95) 100%);
+      padding: 1.5rem;
+      color: #ffffff;
+    }
+
+    .hero-img-overlay h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--nubian-gold-bright);
+    }
+
+    .hero-img-overlay p {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    /* Section General */
+    .section-spacing {
+      padding: 4.5rem 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 740px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--nubian-gold);
+      background: rgba(245, 158, 11, 0.12);
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 0.75rem;
+      border: 1px solid var(--border-accent);
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      margin-bottom: 0.85rem;
+      line-height: 1.25;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       5. Authentic Place Gallery (معرض صور المكان الحقيقي وتفاصيله)
+       ========================================================================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .gallery-card {
+      background: var(--bg-card);
+      border-radius: 22px;
+      border: 1px solid var(--border-card);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--nubian-gold);
+      box-shadow: 0 20px 45px -10px rgba(245, 158, 11, 0.25);
+    }
+
+    .gallery-img-box {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      background: #091322;
+    }
+
+    .gallery-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover .gallery-img-box img {
+      transform: scale(1.08);
+    }
+
+    .gallery-tag-pill {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(6, 14, 24, 0.85);
+      border: 1px solid var(--border-accent);
+      color: var(--nubian-gold-bright);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    [dir="ltr"] .gallery-tag-pill {
+      right: auto;
+      left: 1rem;
+    }
+
+    .gallery-info {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .gallery-info h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      color: var(--text-main);
+    }
+
+    .gallery-info p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       6. Rooms & Stays Section
+       ========================================================================== */
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+
+    .room-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      border: 1px solid var(--border-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--card-shadow);
+      position: relative;
+    }
+
+    .room-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 48px -12px rgba(2, 132, 199, 0.3);
+      border-color: var(--nubian-gold);
+    }
+
+    .room-img-container {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      background: #091322;
+    }
+
+    .room-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .room-card:hover .room-img-container img {
+      transform: scale(1.08);
+    }
+
+    .room-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(6, 14, 24, 0.85);
+      border: 1px solid var(--border-accent);
+      color: var(--nubian-gold-bright);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    [dir="ltr"] .room-badge {
+      right: auto;
+      left: 1rem;
+    }
+
+    .room-body {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .room-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .room-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .room-amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .amenity-chip {
+      background: rgba(2, 132, 199, 0.1);
+      border: 1px solid rgba(2, 132, 199, 0.2);
+      color: var(--text-main);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      border-radius: 8px;
+    }
+
+    .room-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-card);
+      padding-top: 1.25rem;
+    }
+
+    .room-price-box .amount {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--nubian-gold);
+    }
+
+    .room-price-box .period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .btn-room-book {
+      background: linear-gradient(135deg, var(--nubian-blue-royal), var(--nubian-blue-deep));
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.65rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-room-book:hover {
+      background: linear-gradient(135deg, var(--nubian-gold), var(--nubian-terracotta));
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px var(--nubian-gold-glow);
+    }
+
+    /* ==========================================================================
+       7. Smart Stay Calculator
+       ========================================================================== */
+    .calc-card {
+      background: var(--bg-card);
+      border-radius: 30px;
+      border: 2px solid var(--border-accent);
+      padding: 2.5rem;
+      box-shadow: var(--card-shadow), var(--neon-glow);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .calc-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+      color: var(--text-main);
+    }
+
+    .select-custom {
+      width: 100%;
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 0.85rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .slider-nights-badge {
+      color: var(--nubian-gold);
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    .range-input {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--nubian-gold);
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 10px var(--nubian-gold-glow);
+      cursor: pointer;
+    }
+
+    .addon-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--bg-surface);
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-card);
+      cursor: pointer;
+      margin-top: 0.6rem;
+    }
+
+    .addon-checkbox input {
+      accent-color: var(--nubian-gold);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .addon-details {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .calc-summary-panel {
+      background: var(--bg-surface);
+      border-radius: 24px;
+      padding: 2.2rem;
+      border: 1px solid var(--border-card);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .calc-summary-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-total-display {
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: var(--nubian-gold);
+      line-height: 1;
+      margin: 0.75rem 0;
+    }
+
+    .calc-currency-badge {
+      font-size: 1rem;
+      color: var(--nubian-blue-sky);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-calc-whatsapp {
+      width: 100%;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      border: none;
+      border-radius: 16px;
+      padding: 0.95rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-calc-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* ==========================================================================
+       8. Smart Nubian Menu Section
+       ========================================================================== */
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .menu-tab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      color: var(--text-main);
+      padding: 0.65rem 1.4rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .menu-tab-btn.active {
+      background: linear-gradient(135deg, var(--nubian-gold), var(--nubian-terracotta));
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 4px 16px var(--nubian-gold-glow);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .menu-item-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border-card);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-item-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--nubian-gold);
+      box-shadow: 0 16px 36px -8px rgba(245, 158, 11, 0.25);
+    }
+
+    .menu-img-wrap {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #091322;
+    }
+
+    .menu-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .menu-item-card:hover .menu-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .menu-item-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .menu-item-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+
+    .menu-item-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    .menu-item-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-card);
+      padding-top: 1rem;
+    }
+
+    .menu-item-price {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--nubian-gold);
+    }
+
+    .btn-order-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      color: var(--text-main);
+      padding: 0.5rem 0.95rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .btn-order-item:hover {
+      background: var(--nubian-blue-royal);
+      color: #ffffff;
+      border-color: var(--nubian-blue-royal);
+    }
+
+    /* ==========================================================================
+       9. Footer & Floating WhatsApp Button
+       ========================================================================== */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-card);
+      padding: 4rem 0 2rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--nubian-gold-bright), var(--nubian-terracotta));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-col h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--nubian-gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col ul a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-card);
+      padding-top: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .footer-dev-pill {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid var(--border-accent);
+      color: var(--nubian-gold);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    [dir="ltr"] .floating-wa-btn {
+      left: auto;
+      right: 2rem;
+    }
+
+    .floating-wa-btn:hover {
+      transform: scale(1.1) rotate(6deg);
+    }
+
+    .toast-msg {
+      position: fixed;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(150px);
+      background: var(--bg-surface);
+      border: 1px solid var(--nubian-gold);
+      color: var(--text-main);
+      padding: 0.85rem 1.5rem;
+      border-radius: 9999px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      font-size: 0.9rem;
+      font-weight: 700;
+      z-index: 100000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .calc-card {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Demo Lock Fixed Top Banner
+       ========================================================================== -->
+  <div class="demo-banner">
+    <div class="demo-banner-content">
+      <span>🔒</span>
+      <span id="demoBannerText">نسخة معاينة حية مخصصة لإدارة Kato Waidi — لتفعيل النسخة الكاملة تواصل مع المطور على 201095549241</span>
+    </div>
+    <a href="https://wa.me/201095549241?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9%20%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D9%84%D9%85%D9%88%D9%82%D8%B9%20Kato%20Waidi%20%D9%88%D8%A5%D8%B2%D8%A7%D9%84%D8%A9%20%D8%AE%D8%AA%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9." target="_blank" class="demo-banner-btn" id="demoBannerBtn">
+      <span>تواصل مع المطور</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="navbar-spacer"></div>
+
+  <!-- ==========================================================================
+       2. Sticky Modern Navbar with Official Nubian Arched Portal Logo
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand-link">
+        <!-- Official Arched Nubian Portal Logo drawn with Inline SVG -->
+        <svg class="official-logo-svg" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer Decorative Arched Portal Base -->
+          <path d="M20 130 V 65 C 20 37.3858 42.3858 15 70 15 C 97.6142 15 120 37.3858 120 65 V 130 H 20 Z" fill="#0369a1" stroke="#f59e0b" stroke-width="4"/>
+          <!-- Inner Arch Border -->
+          <path d="M32 130 V 70 C 32 49.0132 49.0132 32 70 32 C 90.9868 32 108 49.0132 108 70 V 130 H 32 Z" fill="#0a1728" stroke="#38bdf8" stroke-width="2.5"/>
+          
+          <!-- Geometric Colorful Nubian Motifs inside Arch -->
+          <!-- Top Triangle (Yellow/Gold) -->
+          <polygon points="70,36 54,60 86,60" fill="#f59e0b"/>
+          <!-- Side Triangles (Red & Green) -->
+          <polygon points="40,65 54,65 47,80" fill="#e11d48"/>
+          <polygon points="100,65 86,65 93,80" fill="#10b981"/>
+          <!-- Center Diamond (Blue & Yellow) -->
+          <polygon points="70,62 82,75 70,88 58,75" fill="#38bdf8"/>
+          <polygon points="70,67 78,75 70,83 62,75" fill="#fbbf24"/>
+          
+          <!-- Sun over Nile Horizon at Bottom of Arch -->
+          <circle cx="70" cy="100" r="14" fill="#fbbf24"/>
+          <path d="M33 115 C 50 110 65 122 80 116 C 95 110 105 118 107 116 V 130 H 33 Z" fill="#0284c7"/>
+          
+          <!-- Base Decorative Checkerboard Pattern (Nubian geometric baseline) -->
+          <rect x="22" y="122" width="16" height="8" fill="#e11d48"/>
+          <rect x="38" y="122" width="16" height="8" fill="#fbbf24"/>
+          <rect x="54" y="122" width="16" height="8" fill="#10b981"/>
+          <rect x="70" y="122" width="16" height="8" fill="#38bdf8"/>
+          <rect x="86" y="122" width="16" height="8" fill="#e11d48"/>
+          <rect x="102" y="122" width="16" height="8" fill="#fbbf24"/>
+        </svg>
+
+        <div class="brand-text">
+          <h1>KA WAIDI NUBIAN HOUSE</h1>
+          <span class="sub-slogan" id="brandSloganNav">WHERE PEACE IS • غرب سهيل</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" id="navLinkHome">الرئيسية</a></li>
+          <li><a href="#gallery" id="navLinkGallery">معرض المكان</a></li>
+          <li><a href="#rooms" id="navLinkRooms">الغرف والإقامات</a></li>
+          <li><a href="#calculator" id="navLinkCalc">حاسبة الإقامة</a></li>
+          <li><a href="#menu" id="navLinkMenu">المنيو النوبي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="icon-btn" id="langSwitchBtn" onclick="toggleLanguage()" title="Switch Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="langSwitchLabel">EN</span>
+        </button>
+
+        <!-- Dark/Light Mode -->
+        <button class="icon-btn" id="themeSwitchBtn" onclick="toggleTheme()" title="Toggle Theme">
+          <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+          </svg>
+        </button>
+
+        <!-- Direct WhatsApp -->
+        <button class="btn-wa-header" onclick="directWhatsAppContact()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.002.581 1.956.887 3.093.887 3.182 0 5.767-2.587 5.768-5.766 0-3.18-2.585-5.77-5.77-5.77zm0 10.375c-.975 0-1.849-.281-2.616-.787l-.187-.111-1.571.412.42-1.53-.122-.195c-.563-.901-.861-1.688-.861-2.598 0-2.545 2.071-4.616 4.617-4.616 2.545 0 4.616 2.071 4.616 4.616 0 2.546-2.071 4.616-4.616 4.616z"/></svg>
+          <span id="navWaText">واتساب كاتو وايدي</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>⭐</span>
+          <span id="heroBadgeText">9.8 في غرب سهيل - على ضفاف نيل أسوان الساحر</span>
+        </div>
+        
+        <h2 class="hero-title">
+          <span id="heroTitle1">حيث تلتقي فخامة الضيافة</span><br>
+          <span class="highlight" id="heroTitle2">بروح النوبة وسلام النيل</span>
+        </h2>
+        
+        <div class="hero-slogan">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span id="heroSloganText">Where Peace Is — حيث يسكن السلام والسكينة</span>
+        </div>
+
+        <p class="hero-desc" id="heroDescText">
+          مرحباً بكم في كاتو وايدي (Ka Waidi Nubian House) في قرية غرب سهيل بأسوان. مبنى نوبي أزرق بقباب بيضاء، وأبواب مقوسة ملونة، وساحة رملية فسيحة وتراس يطل مباشرة على نهر النيل وصخور أسوان وقت الغروب.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#rooms" class="btn-primary" id="heroBtnBook">
+            <span>استكشف الغرف واحجز الآن</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#calculator" class="btn-secondary" id="heroBtnCalc">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></svg>
+            <span id="heroBtnCalcText">حاسبة تكلفة الليالي</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <h4>9.8 / 10</h4>
+            <p id="stat1Text">تقييم النزلاء الاستثنائي</p>
+          </div>
+          <div class="stat-box">
+            <h4>100%</h4>
+            <p id="stat2Text">إطلالة مباشرة على النيل</p>
+          </div>
+          <div class="stat-box">
+            <h4>غرب سهيل</h4>
+            <p id="stat3Text">أصالة التراث الأسواني</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Visual Showcase Frame -->
+      <div class="hero-img-showcase">
+        <img id="imgHeroPanorama" src="" alt="Ka Waidi Nubian House Panorama on the Nile">
+        <div class="hero-img-overlay">
+          <h4 id="heroImgCaptionTitle">بانوراما كاتو وايدي على النيل</h4>
+          <p id="heroImgCaptionDesc">مبنى أزرق سماوي بقباب بيضاء وتراس رملي ساحر أمام صخور الشلال وقت الغروب الذهبي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Authentic Place Gallery (معرض صور المكان الحقيقي وتفاصيله)
+       ========================================================================== -->
+  <section class="section-spacing" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="gallerySectionTag">الهوية البصرية ومعرض المكان</span>
+        <h2 class="section-title" id="gallerySectionTitle">معالم كاتو وايدي الحقيقية في غرب سهيل</h2>
+        <p class="section-desc" id="gallerySectionDesc">شاهد تفاصيل المكان الحقيقية: من قباب الطين وسحر صخور النيل إلى الغرف المزخرفة وسهرات الساحة الرملية ليلاً.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- 1. Panorama on the Nile -->
+        <div class="gallery-card">
+          <div class="gallery-img-box">
+            <img id="imgGalleryPanorama" src="" alt="Panorama of Ka Waidi on the Nile">
+            <span class="gallery-tag-pill" id="gTag1">بانوراما النيل 🌊</span>
+          </div>
+          <div class="gallery-info">
+            <h3 id="gTitle1">بانوراما المكان على النيل مباشرة</h3>
+            <p id="gDesc1">مبنى نوبي باللون الأزرق السماوي مع قباب بيضاء، وأبواب مقوسة ملونة، وأمامه ساحة رملية واسعة وتراس يطل مباشرة على نهر النيل وصخور أسوان وقت الغروب.</p>
+          </div>
+        </div>
+
+        <!-- 2. Rooms Interior -->
+        <div class="gallery-card">
+          <div class="gallery-img-box">
+            <img id="imgGalleryRoomInterior" src="" alt="Inside the Nubian Dome Room">
+            <span class="gallery-tag-pill" id="gTag2">شكل الغرف داخلياً 🛏️</span>
+          </div>
+          <div class="gallery-info">
+            <h3 id="gTitle2">شكل الغرف والقباب النوبية</h3>
+            <p id="gDesc2">سقف مقبب من الطوب الأحمر (قبة نوبية)، حوائط باللون اللبني والأخضر مع نقوش نوبية بيضاء، شباك خشبي أخضر مقوس يطل على النيل، وسرير مزين بالورود ومنشفة على شكل تمساح نوبي.</p>
+          </div>
+        </div>
+
+        <!-- 3. Atmosphere & Hospitality -->
+        <div class="gallery-card">
+          <div class="gallery-img-box">
+            <img id="imgGalleryAtmosphere" src="" alt="Nubian Nights & Hospitality">
+            <span class="gallery-tag-pill" id="gTag3">الأجواء والضيافة 🎶</span>
+          </div>
+          <div class="gallery-info">
+            <h3 id="gTitle3">أجواء وسهرات أهل النوبة</h3>
+            <p id="gDesc3">سهرات جماعية لأهل النوبة بالجلابية البيضاء والعمامة والشال الملون مع بوفيه طعام نوبي بالساحة الرملية ليلاً، وأمسيات شاي على الفحم والدفوف التراثية.</p>
+          </div>
+        </div>
+
+        <!-- 4. Sandy Courtyard & Sunset -->
+        <div class="gallery-card">
+          <div class="gallery-img-box">
+            <img id="imgGalleryCourtyard" src="" alt="Sandy Courtyard & Sunset Terrace">
+            <span class="gallery-tag-pill" id="gTag4">الساحة الرملية 🌅</span>
+          </div>
+          <div class="gallery-info">
+            <h3 id="gTitle4">التراس الرملي وغروب أسوان</h3>
+            <p id="gDesc4">جلسات أرضية مريحة بوسائد نوبية ملونة على الرمال الناعمة مباشرة أمام الفلوكة وصخور الشلال الأول لمشاهدة أروع غروب للشمس في مصر.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Rooms & Stays Section (الغرف والإقامات النوبية)
+       ========================================================================== -->
+  <section class="section-spacing" id="rooms">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="roomsSectionTag">غرف وأجنحة كاتو وايدي</span>
+        <h2 class="section-title" id="roomsSectionTitle">إقامة أصيلة تحت القباب النوبية</h2>
+        <p class="section-desc" id="roomsSectionDesc">اختر جناحك المفضل واستمتع بالراحة الفندقية الفاخرة مع روح الأصالة النوبية.</p>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room 1 -->
+        <div class="room-card">
+          <div class="room-img-container">
+            <img id="imgRoomDome" src="" alt="Royal Nubian Dome Suite">
+            <div class="room-badge" id="r1Badge">الأكثر طلباً ⭐</div>
+          </div>
+          <div class="room-body">
+            <h3 class="room-title" id="r1Title">الغرفة الملكية ذات القبة النوبية</h3>
+            <p class="room-desc" id="r1Desc">سقف مقبب من الطوب الأحمر النوبي، جدران لبنية وخضراء بنقوش بيضاء، سرير مزين بمنشفة تمساح نوبي وورود، وتراس خاص مباشر على النيل.</p>
+            <div class="room-amenities">
+              <span class="amenity-chip">❄️ تكييف هواء</span>
+              <span class="amenity-chip">🌅 شرفة نيلية</span>
+              <span class="amenity-chip">🍳 إفطار نوبي ملكي</span>
+              <span class="amenity-chip">🐊 منشفة تمساح وورود</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price-box">
+                <span class="amount">2,850 ج.م</span>
+                <span class="period" id="r1Period">/ الليلة شامل الإفطار</span>
+              </div>
+              <button class="btn-room-book" onclick="bookRoomQuick('الغرفة الملكية ذات القبة النوبية', 'Royal Nubian Dome Suite', 2850)">
+                <span id="r1BookBtn">تجربة الحجز الفوري</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+          <div class="room-img-container">
+            <img id="imgRoomNileView" src="" alt="Panoramic Nile View Deluxe">
+            <div class="room-badge" id="r2Badge">بانوراما نيلية 🌊</div>
+          </div>
+          <div class="room-body">
+            <h3 class="room-title" id="r2Title">غرفة إطلالة النيل البانورامية</h3>
+            <p class="room-desc" id="r2Desc">شباك خشبي أخضر مقوس يطل على النيل وجبال وصخور أسوان وقت الغروب الساحر، سرير كينج مريح، وأجواء هدوء تام.</p>
+            <div class="room-amenities">
+              <span class="amenity-chip">🌅 شباك أخضر مقوس</span>
+              <span class="amenity-chip">❄️ تكييف هواء</span>
+              <span class="amenity-chip">☕ صانعة شاي وقهوة</span>
+              <span class="amenity-chip">🍳 إفطار نوبي</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price-box">
+                <span class="amount">2,400 ج.م</span>
+                <span class="period" id="r2Period">/ الليلة شامل الإفطار</span>
+              </div>
+              <button class="btn-room-book" onclick="bookRoomQuick('غرفة إطلالة النيل البانورامية', 'Panoramic Nile View Deluxe', 2400)">
+                <span id="r2BookBtn">تجربة الحجز الفوري</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card">
+          <div class="room-img-container">
+            <img id="imgRoomCourtyard" src="" alt="Sandy Courtyard & Nubian Nights Suite">
+            <div class="room-badge" id="r3Badge">سهرات وتراث 🔥</div>
+          </div>
+          <div class="room-body">
+            <h3 class="room-title" id="r3Title">باقة التراس الرملي والسهرات النوبية</h3>
+            <p class="room-desc" id="r3Desc">مساحة واسعة مع ساحة رملية خاصة، جلسات أرضية نوبية مريحة، وسهرات شاي على الفحم وبوفيه عشاء تراثي تحت سماء النوبة المرصعة بالنجوم.</p>
+            <div class="room-amenities">
+              <span class="amenity-chip">🔥 ساحة رملية خاصة</span>
+              <span class="amenity-chip">☕ شاي حطب يومي</span>
+              <span class="amenity-chip">👥 تسع حتى 4 أفراد</span>
+              <span class="amenity-chip">🍳 إفطار نوبي</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price-box">
+                <span class="amount">3,500 ج.م</span>
+                <span class="period" id="r3Period">/ الليلة للعائلة</span>
+              </div>
+              <button class="btn-room-book" onclick="bookRoomQuick('باقة التراس الرملي والسهرات النوبية', 'Sandy Courtyard Suite', 3500)">
+                <span id="r3BookBtn">تجربة الحجز الفوري</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Smart Stay Cost Calculator (حاسبة تكلفة الليالي)
+       ========================================================================== -->
+  <section class="section-spacing" id="calculator">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-controls">
+          <div>
+            <span class="section-tag" id="calcTag">الحاسبة التفاعلية</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;" id="calcTitle">احسب تكلفة إقامتك في كاتو وايدي</h2>
+            <p class="section-desc" id="calcDesc">اختر نوع الغرفة وعدد الليالي واحصل على الإجمالي الفوري شامل الإفطار والإضافات التراثية.</p>
+          </div>
+
+          <div class="form-group">
+            <label id="calcRoomLabel">اختر نوع الغرفة أو الجناح:</label>
+            <select class="select-custom" id="calcRoomSelect" onchange="calculateTotal()">
+              <option value="2850" data-name-ar="الغرفة الملكية ذات القبة النوبية" data-name-en="Royal Nubian Dome Suite">الغرفة الملكية ذات القبة النوبية (2,850 ج.م / ليلة)</option>
+              <option value="2400" data-name-ar="غرفة إطلالة النيل البانورامية" data-name-en="Panoramic Nile View Deluxe">غرفة إطلالة النيل البانورامية (2,400 ج.م / ليلة)</option>
+              <option value="3500" data-name-ar="باقة التراس الرملي والسهرات" data-name-en="Sandy Courtyard & Nubian Nights">باقة التراس الرملي والسهرات (3,500 ج.م / ليلة)</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="slider-header">
+              <span id="calcNightsLabel">عدد الليالي:</span>
+              <span class="slider-nights-badge"><span id="nightsCountDisplay">3</span> <span id="nightsUnitText">ليالٍ</span></span>
+            </div>
+            <input type="range" class="range-input" id="nightsRange" min="1" max="14" value="3" oninput="updateNights(this.value)">
+          </div>
+
+          <div>
+            <label class="addon-checkbox">
+              <input type="checkbox" id="addonFelucca" onchange="calculateTotal()">
+              <div class="addon-details">
+                <span id="addon1Title">⛵ رحلة فلوكة نيلية خاصة عند الغروب</span>
+                <span style="color: var(--nubian-gold);">+ 500 ج.م</span>
+              </div>
+            </label>
+
+            <label class="addon-checkbox">
+              <input type="checkbox" id="addonDinner" onchange="calculateTotal()">
+              <div class="addon-details">
+                <span id="addon2Title">🍲 عشاء وبوفيه نوبي في الساحة الرملية</span>
+                <span style="color: var(--nubian-gold);">+ 650 ج.م</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="calc-summary-panel">
+          <span class="calc-summary-title" id="calcTotalTitle">الإجمالي التقديري للإقامة</span>
+          <div class="calc-total-display" id="totalPriceDisplay">9,050</div>
+          <div class="calc-currency-badge" id="calcCurrencyBadge">جنيه مصري (شامل الإفطار النوبي والخدمة)</div>
+
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;" id="calcNoteText">
+            ✨ يشمل الإفطار النوبي بالعيش الشمسي، استقبال بمشروب الكركديه الأسواني، وواي فاي فائق السرعة.
+          </p>
+
+          <button class="btn-calc-whatsapp" onclick="sendCalculatorBookingWhatsApp()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.002.581 1.956.887 3.093.887 3.182 0 5.767-2.587 5.768-5.766 0-3.18-2.585-5.77-5.77-5.77zm0 10.375c-.975 0-1.849-.281-2.616-.787l-.187-.111-1.571.412.42-1.53-.122-.195c-.563-.901-.861-1.688-.861-2.598 0-2.545 2.071-4.616 4.617-4.616 2.545 0 4.616 2.071 4.616 4.616 0 2.546-2.071 4.616-4.616 4.616z"/></svg>
+            <span id="calcSubmitBtnText">تأكيد تجربة الحجز عبر واتساب</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Smart Nubian Menu Section (المنيو النوبي التراثي)
+       ========================================================================== -->
+  <section class="section-spacing" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="menuSectionTag">مطبخ وضيافة كاتو وايدي</span>
+        <h2 class="section-title" id="menuSectionTitle">المنيو النوبي التراثي الأصيل</h2>
+        <p class="section-desc" id="menuSectionDesc">أشهى طواجن الفخار، صينية الإفطار بالعيش الشمسي، ومشروبات أسوان الطبيعية المنعشة.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" onclick="filterMenu('all', this)" id="tabAll">
+          <span>🍽️</span> <span id="tabAllText">كافة الأصناف</span>
+        </button>
+        <button class="menu-tab-btn" onclick="filterMenu('tagines', this)" id="tabTagines">
+          <span>🥘</span> <span id="tabTaginesText">طواجن ومأكولات نوبية</span>
+        </button>
+        <button class="menu-tab-btn" onclick="filterMenu('breakfast', this)" id="tabBreakfast">
+          <span>🍳</span> <span id="tabBreakfastText">صواني الإفطار النوبي</span>
+        </button>
+        <button class="menu-tab-btn" onclick="filterMenu('drinks', this)" id="tabDrinks">
+          <span>🍹</span> <span id="tabDrinksText">مشروبات أسوان الطبيعية</span>
+        </button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Item 1: Jakoud -->
+        <div class="menu-item-card" data-category="tagines">
+          <div class="menu-img-wrap">
+            <img id="imgMenuJakoud" src="" alt="Tagine Jakoud">
+          </div>
+          <div class="menu-item-body">
+            <h3 class="menu-item-title" data-i18n="m1Title">طاجن الجاكود واللحم البلدي</h3>
+            <p class="menu-item-desc" data-i18n="m1Desc">أشهر أكلة نوبية تراثية بالسبانخ والملوخية النوبية وشوربة اللحم الضاني، يُقدم مع عيش دوكة ساخن.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-price">280 ج.م</span>
+              <button class="btn-order-item" onclick="orderMenuItem('طاجن الجاكود واللحم البلدي', 'Traditional Jakoud Tagine', 280)">
+                <span data-i18n="orderBtn">طلب تجريبي</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Breakfast Tray -->
+        <div class="menu-item-card" data-category="breakfast">
+          <div class="menu-img-wrap">
+            <img id="imgMenuBreakfast" src="" alt="Nubian Breakfast Tray">
+          </div>
+          <div class="menu-item-body">
+            <h3 class="menu-item-title" data-i18n="m2Title">صينية الإفطار النوبي الملكي</h3>
+            <p class="menu-item-desc" data-i18n="m2Desc">عيش شمسي طازج من الفرن، فطير مشلتت بالسمن البلدي، عسل أسود بالطحينة، جبنة قديمة، وبيض بلدي بالسمن.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-price">220 ج.م</span>
+              <button class="btn-order-item" onclick="orderMenuItem('صينية الإفطار النوبي الملكي', 'Royal Nubian Breakfast Tray', 220)">
+                <span data-i18n="orderBtn">طلب تجريبي</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Aswan Karkadeh -->
+        <div class="menu-item-card" data-category="drinks">
+          <div class="menu-img-wrap">
+            <img id="imgMenuKarkadeh" src="" alt="Chilled Aswan Hibiscus">
+          </div>
+          <div class="menu-item-body">
+            <h3 class="menu-item-title" data-i18n="m3Title">كركديه أسواني مثلج فاخر</h3>
+            <p class="menu-item-desc" data-i18n="m3Desc">كركديه لوزي نخب أول من مزارع غرب سهيل منقوع على البارد مع أوراق النعناع البلدي المنعشة.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-price">65 ج.م</span>
+              <button class="btn-order-item" onclick="orderMenuItem('كركديه أسواني مثلج فاخر', 'Chilled Aswan Hibiscus', 65)">
+                <span data-i18n="orderBtn">طلب تجريبي</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Doum Drink -->
+        <div class="menu-item-card" data-category="drinks">
+          <div class="menu-img-wrap">
+            <img id="imgMenuDoum" src="" alt="Aswan Natural Doum Juice">
+          </div>
+          <div class="menu-item-body">
+            <h3 class="menu-item-title" data-i18n="m4Title">عصير دوم أسواني طبيعي مهدئ</h3>
+            <p class="menu-item-desc" data-i18n="m4Desc">عصير ثمار الدوم النوبي الغني بالمذاق الكراميلي الطبيعي والمغذي والمساعد على الاسترخاء وخفض الضغط.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-price">70 ج.م</span>
+              <button class="btn-order-item" onclick="orderMenuItem('عصير دوم أسواني طبيعي مهدئ', 'Aswan Natural Doum Juice', 70)">
+                <span data-i18n="orderBtn">طلب تجريبي</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. Footer Section
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>KA WAIDI NUBIAN HOUSE</h3>
+          <p id="footerAboutText">
+            بيت الضيافة النوبي كاتو وايدي في قرية غرب سهيل بأسوان. بوابتك لتجربة السلام الروحي والضيافة الأصيلة، حيث تلتقي قباب الطين وسحر صخور النيل مع كرم أهل النوبة التاريخي.
+          </p>
+          <div class="footer-dev-pill">
+            <span>🔒 نسخة تجريبية حية — للتفعيل: 201095549241</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 id="fCol1Title">روابط سريعة</h4>
+          <ul>
+            <li><a href="#hero" id="fLinkHome">الرئيسية</a></li>
+            <li><a href="#gallery" id="fLinkGallery">معرض المكان</a></li>
+            <li><a href="#rooms" id="fLinkRooms">الغرف والإقامات</a></li>
+            <li><a href="#calculator" id="fLinkCalc">حاسبة الأسعار</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 id="fCol2Title">تجارب وأنشطة</h4>
+          <ul>
+            <li><a href="#hero" id="fAct1">رحلات الفلوكة الشراعية</a></li>
+            <li><a href="#hero" id="fAct2">سهرات الساحة الرملية</a></li>
+            <li><a href="#hero" id="fAct3">زيارة بيوت التماسيح التراثية</a></li>
+            <li><a href="#hero" id="fAct4">سوق المشغولات اليدوية</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 id="fCol3Title">التواصل والموقع</h4>
+          <ul>
+            <li>📍 قرية غرب سهيل، أسوان، مصر</li>
+            <li>📞 هاتف البيت: +201222237078</li>
+            <li>💬 واتساب: +201222237078</li>
+            <li>⭐ Where Peace Is • 9.8 Rating</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Ka Waidi Nubian House. All Rights Reserved. (Where Peace Is)
+        </div>
+        <div>
+          🔒 Designed as a Live High-Converting Demo for Kato Waidi Management.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="javascript:void(0)" onclick="directWhatsAppContact()" class="floating-wa-btn" title="تواصل عبر واتساب">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.002.581 1.956.887 3.093.887 3.182 0 5.767-2.587 5.768-5.766 0-3.18-2.585-5.77-5.77-5.77zm0 10.375c-.975 0-1.849-.281-2.616-.787l-.187-.111-1.571.412.42-1.53-.122-.195c-.563-.901-.861-1.688-.861-2.598 0-2.545 2.071-4.616 4.617-4.616 2.545 0 4.616 2.071 4.616 4.616 0 2.546-2.071 4.616-4.616 4.616z"/></svg>
+  </a>
+
+  <!-- Toast Element -->
+  <div class="toast-msg" id="appToast">
+    <span>🚀 جاري تحويلك إلى واتساب كاتو وايدي...</span>
+  </div>
+
+  <!-- ==========================================================================
+       9. Embedded Pure JavaScript Logic & Image Configs
+       ========================================================================== */ -->
+  <script>
+    /* ==========================================================================
+       📸 إعدادات وروابط الصور الحقيقية (يمكنك استبدالها بروابطك المباشرة بسهولة)
+       ========================================================================== */
+    const KATO_WAIDI_IMAGES = {
+      // 1. بانوراما المكان على النيل: مبنى نوبي أزرق سماوي مع قباب بيضاء، وتراس على صخور النيل والغروب
+      heroPanorama: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1600&q=80",
+      galleryPanorama: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+
+      // 2. شكل الغرف من الداخل: سقف مقبب من الطوب الأحمر النوبي، شباك أخضر مقوس، وسرير بتمساح نوبي
+      roomDomeInterior: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+      roomNileViewWindow: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+
+      // 3. الأجواء والضيافة: سهرات جماعية لأهل النوبة بالجلابية والعمامة مع بوفيه طعام في الساحة الرملية ليلاً
+      nubianGatheringNights: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1200&q=80",
+      sandyCourtyardSunset: "https://images.unsplash.com/photo-1517840905340-ce6100b6c0f9?auto=format&fit=crop&w=1200&q=80",
+
+      // 4. المنيو النوبي: طاجن الجاكود، صينية الإفطار بالعيش الشمسي، كركديه أسواني، عصير دوم
+      menuJakoud: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80",
+      menuBreakfast: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80",
+      menuKarkadeh: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80",
+      menuDoum: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
+    };
+
+    /* حقن روابط الصور في عناصر الصفحة */
+    function injectImages() {
+      const elHero = document.getElementById('imgHeroPanorama');
+      if (elHero) elHero.src = KATO_WAIDI_IMAGES.heroPanorama;
+
+      const elG1 = document.getElementById('imgGalleryPanorama');
+      if (elG1) elG1.src = KATO_WAIDI_IMAGES.galleryPanorama;
+
+      const elG2 = document.getElementById('imgGalleryRoomInterior');
+      if (elG2) elG2.src = KATO_WAIDI_IMAGES.roomDomeInterior;
+
+      const elG3 = document.getElementById('imgGalleryAtmosphere');
+      if (elG3) elG3.src = KATO_WAIDI_IMAGES.nubianGatheringNights;
+
+      const elG4 = document.getElementById('imgGalleryCourtyard');
+      if (elG4) elG4.src = KATO_WAIDI_IMAGES.sandyCourtyardSunset;
+
+      const elR1 = document.getElementById('imgRoomDome');
+      if (elR1) elR1.src = KATO_WAIDI_IMAGES.roomDomeInterior;
+
+      const elR2 = document.getElementById('imgRoomNileView');
+      if (elR2) elR2.src = KATO_WAIDI_IMAGES.roomNileViewWindow;
+
+      const elR3 = document.getElementById('imgRoomCourtyard');
+      if (elR3) elR3.src = KATO_WAIDI_IMAGES.sandyCourtyardSunset;
+
+      const elM1 = document.getElementById('imgMenuJakoud');
+      if (elM1) elM1.src = KATO_WAIDI_IMAGES.menuJakoud;
+
+      const elM2 = document.getElementById('imgMenuBreakfast');
+      if (elM2) elM2.src = KATO_WAIDI_IMAGES.menuBreakfast;
+
+      const elM3 = document.getElementById('imgMenuKarkadeh');
+      if (elM3) elM3.src = KATO_WAIDI_IMAGES.menuKarkadeh;
+
+      const elM4 = document.getElementById('imgMenuDoum');
+      if (elM4) elM4.src = KATO_WAIDI_IMAGES.menuDoum;
+    }
+
+    /* Target Constants */
+    const TARGET_WHATSAPP = '201222237078';
+    const DEVELOPER_PHONE = '201095549241';
+
+    let currentLang = 'ar';
+    let currentTheme = 'dark';
+
+    /* Bilingual Dictionaries */
+    const translations = {
+      ar: {
+        demoBannerText: "🔒 نسخة معاينة حية مخصصة لإدارة Kato Waidi — لتفعيل النسخة الكاملة تواصل مع المطور على 201095549241",
+        demoBannerBtn: "تواصل مع المطور",
+        brandSloganNav: "WHERE PEACE IS • غرب سهيل",
+        navLinkHome: "الرئيسية",
+        navLinkGallery: "معرض المكان",
+        navLinkRooms: "الغرف والإقامات",
+        navLinkCalc: "حاسبة الإقامة",
+        navLinkMenu: "المنيو النوبي",
+        navWaText: "واتساب كاتو وايدي",
+        heroBadgeText: "9.8 في غرب سهيل - على ضفاف نيل أسوان الساحر",
+        heroTitle1: "حيث تلتقي فخامة الضيافة",
+        heroTitle2: "بروح النوبة وسلام النيل",
+        heroSloganText: "Where Peace Is — حيث يسكن السلام والسكينة",
+        heroDescText: "مرحباً بكم في كاتو وايدي (Ka Waidi Nubian House) في قرية غرب سهيل بأسوان. مبنى نوبي أزرق بقباب بيضاء، وأبواب مقوسة ملونة، وساحة رملية فسيحة وتراس يطل مباشرة على نهر النيل وصخور أسوان وقت الغروب.",
+        heroBtnBook: "استكشف الغرف واحجز الآن",
+        heroBtnCalcText: "حاسبة تكلفة الليالي",
+        stat1Text: "تقييم النزلاء الاستثنائي",
+        stat2Text: "إطلالة مباشرة على النيل",
+        stat3Text: "أصالة التراث الأسواني",
+        heroImgCaptionTitle: "بانوراما كاتو وايدي على النيل",
+        heroImgCaptionDesc: "مبنى أزرق سماوي بقباب بيضاء وتراس رملي ساحر أمام صخور الشلال وقت الغروب الذهبي.",
+        gallerySectionTag: "الهوية البصرية ومعرض المكان",
+        gallerySectionTitle: "معالم كاتو وايدي الحقيقية في غرب سهيل",
+        gallerySectionDesc: "شاهد تفاصيل المكان الحقيقية: من قباب الطين وسحر صخور النيل إلى الغرف المزخرفة وسهرات الساحة الرملية ليلاً.",
+        gTag1: "بانوراما النيل 🌊",
+        gTitle1: "بانوراما المكان على النيل مباشرة",
+        gDesc1: "مبنى نوبي باللون الأزرق السماوي مع قباب بيضاء، وأبواب مقوسة ملونة، وأمامه ساحة رملية واسعة وتراس يطل مباشرة على نهر النيل وصخور أسوان وقت الغروب.",
+        gTag2: "شكل الغرف داخلياً 🛏️",
+        gTitle2: "شكل الغرف والقباب النوبية",
+        gDesc2: "سقف مقبب من الطوب الأحمر (قبة نوبية)، حوائط باللون اللبني والأخضر مع نقوش نوبية بيضاء، شباك خشبي أخضر مقوس يطل على النيل، وسرير مزين بالورود ومنشفة على شكل تمساح نوبي.",
+        gTag3: "الأجواء والضيافة 🎶",
+        gTitle3: "أجواء وسهرات أهل النوبة",
+        gDesc3: "سهرات جماعية لأهل النوبة بالجلابية البيضاء والعمامة والشال الملون مع بوفيه طعام نوبي بالساحة الرملية ليلاً، وأمسيات شاي على الفحم والدفوف التراثية.",
+        gTag4: "الساحة الرملية 🌅",
+        gTitle4: "التراس الرملي وغروب أسوان",
+        gDesc4: "جلسات أرضية مريحة بوسائد نوبية ملونة على الرمال الناعمة مباشرة أمام الفلوكة وصخور الشلال الأول لمشاهدة أروع غروب للشمس في مصر.",
+        roomsSectionTag: "غرف وأجنحة كاتو وايدي",
+        roomsSectionTitle: "إقامة أصيلة تحت القباب النوبية",
+        roomsSectionDesc: "اختر جناحك المفضل واستمتع بالراحة الفندقية الفاخرة مع روح الأصالة النوبية.",
+        r1Badge: "الأكثر طلباً ⭐",
+        r1Title: "الغرفة الملكية ذات القبة النوبية",
+        r1Desc: "سقف مقبب من الطوب الأحمر النوبي، جدران لبنية وخضراء بنقوش بيضاء، سرير مزين بمنشفة تمساح نوبي وورود، وتراس خاص مباشر على النيل.",
+        r1Period: "/ الليلة شامل الإفطار",
+        r1BookBtn: "تجربة الحجز الفوري",
+        r2Badge: "بانوراما نيلية 🌊",
+        r2Title: "غرفة إطلالة النيل البانورامية",
+        r2Desc: "شباك خشبي أخضر مقوس يطل على النيل وجبال وصخور أسوان وقت الغروب الساحر، سرير كينج مريح، وأجواء هدوء تام.",
+        r2Period: "/ الليلة شامل الإفطار",
+        r2BookBtn: "تجربة الحجز الفوري",
+        r3Badge: "سهرات وتراث 🔥",
+        r3Title: "باقة التراس الرملي والسهرات النوبية",
+        r3Desc: "مساحة واسعة مع ساحة رملية خاصة، جلسات أرضية نوبية مريحة، وسهرات شاي على الفحم وبوفيه عشاء تراثي تحت سماء النوبة المرصعة بالنجوم.",
+        r3Period: "/ الليلة للعائلة",
+        r3BookBtn: "تجربة الحجز الفوري",
+        calcTag: "الحاسبة التفاعلية",
+        calcTitle: "احسب تكلفة إقامتك في كاتو وايدي",
+        calcDesc: "اختر نوع الغرفة وعدد الليالي واحصل على الإجمالي الفوري شامل الإفطار والإضافات التراثية.",
+        calcRoomLabel: "اختر نوع الغرفة أو الجناح:",
+        calcNightsLabel: "عدد الليالي:",
+        nightsUnitText: "ليالٍ",
+        addon1Title: "⛵ رحلة فلوكة نيلية خاصة عند الغروب",
+        addon2Title: "🍲 عشاء وبوفيه نوبي في الساحة الرملية",
+        calcTotalTitle: "الإجمالي التقديري للإقامة",
+        calcCurrencyBadge: "جنيه مصري (شامل الإفطار النوبي والخدمة)",
+        calcNoteText: "✨ يشمل الإفطار النوبي بالعيش الشمسي، استقبال بمشروب الكركديه الأسواني، وواي فاي فائق السرعة.",
+        calcSubmitBtnText: "تأكيد تجربة الحجز عبر واتساب",
+        menuSectionTag: "مطبخ وضيافة كاتو وايدي",
+        menuSectionTitle: "المنيو النوبي التراثي الأصيل",
+        menuSectionDesc: "أشهى طواجن الفخار، صينية الإفطار بالعيش الشمسي، ومشروبات أسوان الطبيعية المنعشة.",
+        tabAllText: "كافة الأصناف",
+        tabTaginesText: "طواجن ومأكولات نوبية",
+        tabBreakfastText: "صواني الإفطار النوبي",
+        tabDrinksText: "مشروبات أسوان الطبيعية",
+        m1Title: "طاجن الجاكود واللحم البلدي",
+        m1Desc: "أشهر أكلة نوبية تراثية بالسبانخ والملوخية النوبية وشوربة اللحم الضاني، يُقدم مع عيش دوكة ساخن.",
+        m2Title: "صينية الإفطار النوبي الملكي",
+        m2Desc: "عيش شمسي طازج من الفرن، فطير مشلتت بالسمن البلدي، عسل أسود بالطحينة، جبنة قديمة، وبيض بلدي بالسمن.",
+        m3Title: "كركديه أسواني مثلج فاخر",
+        m3Desc: "كركديه لوزي نخب أول من مزارع غرب سهيل منقوع على البارد مع أوراق النعناع البلدي المنعشة.",
+        m4Title: "عصير دوم أسواني طبيعي مهدئ",
+        m4Desc: "عصير ثمار الدوم النوبي الغني بالمذاق الكراميلي الطبيعي والمغذي والمساعد على الاسترخاء وخفض الضغط.",
+        orderBtn: "طلب تجريبي",
+        fCol1Title: "روابط سريعة",
+        fCol2Title: "تجارب وأنشطة",
+        fCol3Title: "التواصل والموقع",
+        footerAboutText: "بيت الضيافة النوبي كاتو وايدي في قرية غرب سهيل بأسوان. بوابتك لتجربة السلام الروحي والضيافة الأصيلة، حيث تلتقي قباب الطين وسحر صخور النيل مع كرم أهل النوبة التاريخي."
+      },
+      en: {
+        demoBannerText: "🔒 Live Demo Preview exclusively for Kato Waidi Management — To activate full version contact developer at +201095549241",
+        demoBannerBtn: "Contact Developer",
+        brandSloganNav: "WHERE PEACE IS • GHARB SOHEIL",
+        navLinkHome: "Home",
+        navLinkGallery: "Place Gallery",
+        navLinkRooms: "Rooms & Stays",
+        navLinkCalc: "Stay Calculator",
+        navLinkMenu: "Nubian Menu",
+        navWaText: "Host WhatsApp",
+        heroBadgeText: "⭐ 9.8 in Gharb Soheil - On the enchanting Nile shores",
+        heroTitle1: "Where Serene Luxury",
+        heroTitle2: "Meets Nubian Soul & Peace",
+        heroSloganText: "Where Peace Is — Your Sanctuary in Aswan",
+        heroDescText: "Welcome to Ka Waidi Nubian House in historic Gharb Soheil, Aswan. A sky-blue Nubian retreat with white domes, arched colorful doors, a sandy courtyard, and a terrace overlooking the Nile boulders at sunset.",
+        heroBtnBook: "Explore Rooms & Book Now",
+        heroBtnCalcText: "Stay Cost Calculator",
+        stat1Text: "Exceptional Guest Rating",
+        stat2Text: "Direct Nile View",
+        stat3Text: "Authentic Aswan Heritage",
+        heroImgCaptionTitle: "Ka Waidi Panorama on the Nile",
+        heroImgCaptionDesc: "Sky-blue building with white domes and sandy terrace overlooking the first cataract boulders at golden sunset.",
+        gallerySectionTag: "Visual Identity & Gallery",
+        gallerySectionTitle: "Authentic Features of Ka Waidi in Gharb Soheil",
+        gallerySectionDesc: "Witness the real details: from mudbrick domes and scenic Nile boulders to decorative suites and evening gatherings.",
+        gTag1: "Nile Panorama 🌊",
+        gTitle1: "Direct Nile Panorama",
+        gDesc1: "Sky-blue Nubian architecture with white domes, arched doors in yellow, green, and red, with an expansive sandy courtyard directly on the Nile.",
+        gTag2: "Rooms Interior 🛏️",
+        gTitle2: "Nubian Domes & Rooms Interior",
+        gDesc2: "Vaulted red brick ceiling (Nubian dome), walls in baby-blue and green with white motifs, arched green timber window, and a bed adorned with flowers and a crocodile-folded towel.",
+        gTag3: "Atmosphere & Hospitality 🎶",
+        gTitle3: "Nubian Gatherings & Hospitality",
+        gDesc3: "Traditional gatherings of Nubian hosts in white galabeyas, turbans, and colorful shawls with a local buffet in the sandy courtyard under the stars.",
+        gTag4: "Sandy Courtyard 🌅",
+        gTitle4: "Sandy Terrace & Aswan Sunset",
+        gDesc4: "Comfortable floor seating on soft sand with colorful cushions directly in front of sailing feluccas and sunset granite boulders.",
+        roomsSectionTag: "Rooms & Suites",
+        roomsSectionTitle: "Authentic Stays Under Nubian Domes",
+        roomsSectionDesc: "Select your desired suite and enjoy boutique comfort steeped in ancient Nubian charm.",
+        r1Badge: "Top Pick ⭐",
+        r1Title: "Royal Nubian Dome Suite",
+        r1Desc: "Vaulted red brick dome, baby-blue and green walls, bed with folded crocodile towel and flowers, and private terrace on the Nile.",
+        r1Period: "/ night incl. breakfast",
+        r1BookBtn: "Instant Demo Booking",
+        r2Badge: "Nile Panorama 🌊",
+        r2Title: "Panoramic Nile View Deluxe",
+        r2Desc: "Arched green timber window looking over the Nile and granite hills during sunset, king bed, and tranquil serenity.",
+        r2Period: "/ night incl. breakfast",
+        r2BookBtn: "Instant Demo Booking",
+        r3Badge: "Campfire & Heritage 🔥",
+        r3Title: "Sandy Courtyard & Nubian Nights",
+        r3Desc: "Spacious private sandy courtyard, cozy floor cushions, ember tea, and a heritage dinner buffet under star-studded skies.",
+        r3Period: "/ night for family",
+        r3BookBtn: "Instant Demo Booking",
+        calcTag: "Interactive Calculator",
+        calcTitle: "Calculate Your Stay at Ka Waidi",
+        calcDesc: "Choose your suite and nights to see live total costs including breakfast and cultural add-ons.",
+        calcRoomLabel: "Select Room or Suite:",
+        calcNightsLabel: "Number of Nights:",
+        nightsUnitText: "Nights",
+        addon1Title: "⛵ Private Sunset Felucca Sailing Tour",
+        addon2Title: "🍲 Authentic Nubian Sand-side Dinner Buffet",
+        calcTotalTitle: "Estimated Total Stay Cost",
+        calcCurrencyBadge: "Egyptian Pounds (Includes Nubian Breakfast & Service)",
+        calcNoteText: "✨ Includes daily Nubian breakfast with sun bread, welcome cold hibiscus tea, and ultra-fast Wi-Fi.",
+        calcSubmitBtnText: "Confirm Demo Booking via WhatsApp",
+        menuSectionTag: "Kitchen & Hospitality",
+        menuSectionTitle: "Authentic Nubian Heritage Menu",
+        menuSectionDesc: "Freshly prepared daily in earthenware tagines with authentic sun bread and refreshing Aswan beverages.",
+        tabAllText: "All Dishes",
+        tabTaginesText: "Tajines & Mains",
+        tabBreakfastText: "Breakfast Trays",
+        tabDrinksText: "Aswan Natural Drinks",
+        m1Title: "Traditional Jakoud & Meat Tajine",
+        m1Desc: "Nubian heritage spinach and greens cooked slowly in lamb broth, served with steaming Douka bread.",
+        m2Title: "Royal Nubian Breakfast Tray",
+        m2Desc: "Fresh clay oven Shamsi bread, layered Fiteer with ghee, pure honey, tahini, aged cheese, and eggs.",
+        m3Title: "Chilled Aswan Hibiscus",
+        m3Desc: "Grade-A Aswan karkadeh infused cold with fragrant local wild mint leaves.",
+        m4Title: "Aswan Natural Doum Juice",
+        m4Desc: "Soothing natural doum fruit beverage packed with natural caramel flavors and relaxation benefits.",
+        orderBtn: "Demo Order",
+        fCol1Title: "Quick Links",
+        fCol2Title: "Experiences",
+        fCol3Title: "Contact & Location",
+        footerAboutText: "Ka Waidi Nubian House in Gharb Soheil, Aswan. Your gateway to peace and authentic Nubian hospitality where mudbrick domes meet the majestic Nile waters."
+      }
+    };
+
+    /* Language Switcher */
+    function toggleLanguage() {
+      const targetLang = (currentLang === 'ar') ? 'en' : 'ar';
+      setLanguage(targetLang);
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+      document.getElementById('langSwitchLabel').textContent = (lang === 'ar') ? 'EN' : 'عربي';
+
+      const dict = translations[lang];
+      for (const [id, val] of Object.entries(dict)) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.textContent = val;
+        }
+      }
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+
+      calculateTotal();
+    }
+
+    /* Dark/Light Mode Switcher */
+    function toggleTheme() {
+      const nextTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+      setTheme(nextTheme);
+    }
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      const icon = document.getElementById('themeIcon');
+      if (theme === 'light') {
+        icon.innerHTML = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+      } else {
+        icon.innerHTML = '<path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>';
+      }
+    }
+
+    /* Stay Calculator Logic */
+    function updateNights(val) {
+      document.getElementById('nightsCountDisplay').textContent = val;
+      calculateTotal();
+    }
+
+    function calculateTotal() {
+      const select = document.getElementById('calcRoomSelect');
+      const roomPrice = parseInt(select.value) || 2850;
+      const nights = parseInt(document.getElementById('nightsRange').value) || 1;
+
+      let extra = 0;
+      if (document.getElementById('addonFelucca').checked) extra += 500;
+      if (document.getElementById('addonDinner').checked) extra += 650;
+
+      const total = (roomPrice * nights) + extra;
+      document.getElementById('totalPriceDisplay').textContent = total.toLocaleString();
+    }
+
+    /* Menu Tab Filter */
+    function filterMenu(category, btn) {
+      document.querySelectorAll('.menu-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.menu-item-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    /* ==========================================================================
+       📲 Smart WhatsApp Routing Engine (Number: 201222237078)
+       Format: "⚠️ [اختبار حي من النسخة التجريبية غير المفعلة] - مرحباً Kato Waidi، تجربة حجز: (التفاصيل) ناجحة. لتفعيل الموقع الرسمي وإزالة هذا الختم يرجى اعتماد النسخة النهائية."
+       ========================================================================== */
+    function sendWhatsAppBooking(details) {
+      const messageText = `⚠️ [اختبار حي من النسخة التجريبية غير المفعلة] - مرحباً Kato Waidi، تجربة حجز: (${details}) ناجحة. لتفعيل الموقع الرسمي وإزالة هذا الختم يرجى اعتماد النسخة النهائية.`;
+      
+      const targetUrl = `https://wa.me/${TARGET_WHATSAPP}?text=${encodeURIComponent(messageText)}`;
+
+      showToast(currentLang === 'ar' ? '🚀 جاري تحويلك إلى واتساب كاتو وايدي...' : '🚀 Redirecting to Kato Waidi WhatsApp...');
+
+      setTimeout(() => {
+        window.open(targetUrl, '_blank', 'noopener,noreferrer');
+      }, 500);
+    }
+
+    // 1. Calculator Booking
+    function sendCalculatorBookingWhatsApp() {
+      const select = document.getElementById('calcRoomSelect');
+      const opt = select.options[select.selectedIndex];
+      const roomName = (currentLang === 'ar') ? opt.getAttribute('data-name-ar') : opt.getAttribute('data-name-en');
+      const nights = document.getElementById('nightsRange').value;
+      const total = document.getElementById('totalPriceDisplay').textContent;
+
+      let extrasList = [];
+      if (document.getElementById('addonFelucca').checked) extrasList.push('رحلة فلوكة نيلية');
+      if (document.getElementById('addonDinner').checked) extrasList.push('عشاء وبوفيه نوبي');
+      const extrasText = extrasList.length > 0 ? ` + إضافات: ${extrasList.join(' و ')}` : '';
+
+      const details = `${roomName} - عدد الليالي: ${nights}${extrasText} - الإجمالي: ${total} ج.م`;
+      sendWhatsAppBooking(details);
+    }
+
+    // 2. Direct Room Card Booking
+    function bookRoomQuick(nameAr, nameEn, price) {
+      const name = (currentLang === 'ar') ? nameAr : nameEn;
+      const details = `${name} (ليلة واحدة مبدئياً) بسعر ${price.toLocaleString()} ج.م`;
+      sendWhatsAppBooking(details);
+    }
+
+    // 3. Menu Item Order
+    function orderMenuItem(nameAr, nameEn, price) {
+      const name = (currentLang === 'ar') ? nameAr : nameEn;
+      const details = `طلب منيو: ${name} بسعر ${price} ج.م`;
+      sendWhatsAppBooking(details);
+    }
+
+    // 4. Header & Floating Direct WhatsApp
+    function directWhatsAppContact() {
+      sendWhatsAppBooking('استفسار وحجز إقامة نوبية في كاتو وايدي');
+    }
+
+    /* Toast Notification Helper */
+    function showToast(msg) {
+      const toast = document.getElementById('appToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    /* Initialize On DOM Load */
+    window.addEventListener('DOMContentLoaded', () => {
+      injectImages();
+      calculateTotal();
+    });
+  </script>
+</body>
+</html>
